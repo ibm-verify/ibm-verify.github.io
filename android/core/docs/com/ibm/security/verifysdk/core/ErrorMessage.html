@@ -108,6 +108,9 @@ var pathtoroot = "../../../../../";
                         <dt>All Implemented Interfaces:</dt>
                         <dd>
                             
+                            <code>java.io.Serializable</code>
+                            
+                            
                         </dd>
                     </dl>
                     
@@ -115,7 +118,7 @@ var pathtoroot = "../../../../../";
                     <pre class="wrap-overflow">
 @ExperimentalSerializationApi()@Serializable() 
 public final class <span class="typeNameLabel"><a href=ErrorMessage.html>ErrorMessage</a></span>
-
+extends <a href=https://developer.android.com/reference/kotlin/java/lang/Exception.html>Exception</a>
                     </pre>
                     <div class="block"></div>
 
@@ -181,6 +184,18 @@ public final class <span class="typeNameLabel"><a href=ErrorMessage.html>ErrorMe
                                         <tr class="rowColor">
                                             <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
                                             <th class="colSecond" scope="row"><code><a href=ErrorMessage.html#errorDescription>errorDescription</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=helper/ErrorResponse.html#cause>cause</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=VerifySdkException.html#message>message</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
@@ -284,6 +299,12 @@ public final class <span class="typeNameLabel"><a href=ErrorMessage.html>ErrorMe
                                 </div>
                                 <ul class="blockList">
                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.kotlin.Throwable">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;kotlin.Throwable</h3>
+                                            <code>addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace</code></li>
+                                 
                                     <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
                                         <!--   -->
                                     </a>

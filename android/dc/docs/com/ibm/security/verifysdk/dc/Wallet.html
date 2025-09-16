@@ -108,9 +108,6 @@ var pathtoroot = "../../../../../";
                         <dt>All Implemented Interfaces:</dt>
                         <dd>
                             
-                            <code>com.ibm.security.verifysdk.dc.WalletDescriptor</code>
-                            
-                            
                         </dd>
                     </dl>
                     
@@ -118,7 +115,7 @@ var pathtoroot = "../../../../../";
                     <pre class="wrap-overflow">
 @Serializable() 
 public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></span>
- implements <a href=WalletDescriptor.html>WalletDescriptor</a>
+
                     </pre>
                     <div class="block"><p>Represents a digital wallet containing credentials, connections, and verification details.</p><p>This class is used to manage a wallet's authentication, agent information, and stored digital credentials. It provides the necessary details to interact with a credential ecosystem, including connection management and verification tracking.</p></div>
 
@@ -199,13 +196,13 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                         </tr>
                                         
                                         <tr class="rowColor">
-                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#clientSecret>clientSecret</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="altColor">
-                                            <td class="colFirst"><code>private  TokenInfo</code></td>
+                                            <td class="colFirst"><code>private final TokenInfo</code></td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#token>token</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -217,25 +214,25 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                         </tr>
                                         
                                         <tr class="altColor">
-                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/ConnectionInfo.html>ConnectionInfo</a>&gt;</code></td>
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/ConnectionInfo.html>ConnectionInfo</a>&gt;</code></td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#connections>connections</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="rowColor">
-                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/InvitationInfo.html>InvitationInfo</a>&gt;</code></td>
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/InvitationInfo.html>InvitationInfo</a>&gt;</code></td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#invitations>invitations</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="altColor">
-                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/CredentialDescriptor.html>CredentialDescriptor</a>&gt;</code></td>
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/CredentialDescriptor.html>CredentialDescriptor</a>&gt;</code></td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#credentials>credentials</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="rowColor">
-                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/VerificationInfo.html>VerificationInfo</a>&gt;</code></td>
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/VerificationInfo.html>VerificationInfo</a>&gt;</code></td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#verifications>verifications</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -352,14 +349,6 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=Wallet.html#setClientSecret(java.lang.String)>setClientSecret</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientSecret) </code>
-                                            </th>
-                                            <td class="colLast">An optional client secret for authentication, if required.</td>
-                                        </tr>
-                                        
-                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>final TokenInfo</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#getToken()>getToken</a>() </code>
@@ -367,15 +356,7 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                             <td class="colLast">The authentication token used to access wallet services.</td>
                                         </tr>
                                         
-                                        <tr id="i6" class="altColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=Wallet.html#setToken(com.ibm.security.verifysdk.authentication.model.TokenInfo)>setToken</a>(TokenInfo token) </code>
-                                            </th>
-                                            <td class="colLast">The authentication token used to access wallet services.</td>
-                                        </tr>
-                                        
-                                        <tr id="i7" class="rowColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>final <a href=model/AgentInfo.html>AgentInfo</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#getAgent()>getAgent</a>() </code>
@@ -383,7 +364,7 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                             <td class="colLast">Information about the agent managing the wallet.</td>
                                         </tr>
                                         
-                                        <tr id="i8" class="altColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/ConnectionInfo.html>ConnectionInfo</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#getConnections()>getConnections</a>() </code>
@@ -391,15 +372,7 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                             <td class="colLast">A mutable list of active connections associated with the wallet.</td>
                                         </tr>
                                         
-                                        <tr id="i9" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=Wallet.html#setConnections(java.util.List)>setConnections</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/ConnectionInfo.html>ConnectionInfo</a>&gt; connections) </code>
-                                            </th>
-                                            <td class="colLast">A mutable list of active connections associated with the wallet.</td>
-                                        </tr>
-                                        
-                                        <tr id="i10" class="altColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/InvitationInfo.html>InvitationInfo</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#getInvitations()>getInvitations</a>() </code>
@@ -407,15 +380,7 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                             <td class="colLast">A mutable list of pending invitations for establishing new connections.</td>
                                         </tr>
                                         
-                                        <tr id="i11" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=Wallet.html#setInvitations(java.util.List)>setInvitations</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/InvitationInfo.html>InvitationInfo</a>&gt; invitations) </code>
-                                            </th>
-                                            <td class="colLast">A mutable list of pending invitations for establishing new connections.</td>
-                                        </tr>
-                                        
-                                        <tr id="i12" class="altColor">
+                                        <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/CredentialDescriptor.html>CredentialDescriptor</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#getCredentials()>getCredentials</a>() </code>
@@ -423,26 +388,10 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                             <td class="colLast">A mutable list of digital credentials stored in the wallet.</td>
                                         </tr>
                                         
-                                        <tr id="i13" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=Wallet.html#setCredentials(java.util.List)>setCredentials</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/CredentialDescriptor.html>CredentialDescriptor</a>&gt; credentials) </code>
-                                            </th>
-                                            <td class="colLast">A mutable list of digital credentials stored in the wallet.</td>
-                                        </tr>
-                                        
-                                        <tr id="i14" class="altColor">
+                                        <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/VerificationInfo.html>VerificationInfo</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Wallet.html#getVerifications()>getVerifications</a>() </code>
-                                            </th>
-                                            <td class="colLast">A mutable list of verification processes associated with the wallet.</td>
-                                        </tr>
-                                        
-                                        <tr id="i15" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=Wallet.html#setVerifications(java.util.List)>setVerifications</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/VerificationInfo.html>VerificationInfo</a>&gt; verifications) </code>
                                             </th>
                                             <td class="colLast">A mutable list of verification processes associated with the wallet.</td>
                                         </tr>
@@ -593,29 +542,6 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                     </li>
                                 </ul>
                                 
-                                <a id="setClientSecret(java.lang.String)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>setClientSecret</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Wallet.html#setClientSecret(java.lang.String)>setClientSecret</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientSecret)</pre>
-                                        <div class="block"><p>An optional client secret for authentication, if required.</p></div>
-
-                                        <dl>
-
-                                        
-
-                                        
-
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
                                 <a id="getToken()">
                                     <!--   -->
                                 </a>
@@ -625,29 +551,6 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                     <li class="blockList">
                                         <h4>getToken</h4>
                                         <pre class="methodSignature"> final TokenInfo <a href=Wallet.html#getToken()>getToken</a>()</pre>
-                                        <div class="block"><p>The authentication token used to access wallet services.</p></div>
-
-                                        <dl>
-
-                                        
-
-                                        
-
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
-                                <a id="setToken(com.ibm.security.verifysdk.authentication.model.TokenInfo)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>setToken</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Wallet.html#setToken(com.ibm.security.verifysdk.authentication.model.TokenInfo)>setToken</a>(TokenInfo token)</pre>
                                         <div class="block"><p>The authentication token used to access wallet services.</p></div>
 
                                         <dl>
@@ -708,29 +611,6 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                     </li>
                                 </ul>
                                 
-                                <a id="setConnections(java.util.List)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>setConnections</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Wallet.html#setConnections(java.util.List)>setConnections</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/ConnectionInfo.html>ConnectionInfo</a>&gt; connections)</pre>
-                                        <div class="block"><p>A mutable list of active connections associated with the wallet.</p></div>
-
-                                        <dl>
-
-                                        
-
-                                        
-
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
                                 <a id="getInvitations()">
                                     <!--   -->
                                 </a>
@@ -740,29 +620,6 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                     <li class="blockList">
                                         <h4>getInvitations</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/InvitationInfo.html>InvitationInfo</a>&gt; <a href=Wallet.html#getInvitations()>getInvitations</a>()</pre>
-                                        <div class="block"><p>A mutable list of pending invitations for establishing new connections.</p></div>
-
-                                        <dl>
-
-                                        
-
-                                        
-
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
-                                <a id="setInvitations(java.util.List)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>setInvitations</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Wallet.html#setInvitations(java.util.List)>setInvitations</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/InvitationInfo.html>InvitationInfo</a>&gt; invitations)</pre>
                                         <div class="block"><p>A mutable list of pending invitations for establishing new connections.</p></div>
 
                                         <dl>
@@ -800,61 +657,15 @@ public final class <span class="typeNameLabel"><a href=Wallet.html>Wallet</a></s
                                     </li>
                                 </ul>
                                 
-                                <a id="setCredentials(java.util.List)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>setCredentials</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Wallet.html#setCredentials(java.util.List)>setCredentials</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/CredentialDescriptor.html>CredentialDescriptor</a>&gt; credentials)</pre>
-                                        <div class="block"><p>A mutable list of digital credentials stored in the wallet.</p></div>
-
-                                        <dl>
-
-                                        
-
-                                        
-
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
                                 <a id="getVerifications()">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>getVerifications</h4>
-                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/VerificationInfo.html>VerificationInfo</a>&gt; <a href=Wallet.html#getVerifications()>getVerifications</a>()</pre>
-                                        <div class="block"><p>A mutable list of verification processes associated with the wallet.</p><p>Serialization:</p><ul><li><p>The <code>refreshUri</code> and <code>baseUri</code> properties use a custom serializer (<code>URLSerializer</code>) to handle URL serialization.</p></li></ul></div>
-
-                                        <dl>
-
-                                        
-
-                                        
-
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
-                                <a id="setVerifications(java.util.List)">
                                     <!--   -->
                                 </a>
                                 <ul class=
                                               "blockListLast"
                                           >
                                     <li class="blockList">
-                                        <h4>setVerifications</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Wallet.html#setVerifications(java.util.List)>setVerifications</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/VerificationInfo.html>VerificationInfo</a>&gt; verifications)</pre>
+                                        <h4>getVerifications</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=model/VerificationInfo.html>VerificationInfo</a>&gt; <a href=Wallet.html#getVerifications()>getVerifications</a>()</pre>
                                         <div class="block"><p>A mutable list of verification processes associated with the wallet.</p><p>Serialization:</p><ul><li><p>The <code>refreshUri</code> and <code>baseUri</code> properties use a custom serializer (<code>URLSerializer</code>) to handle URL serialization.</p></li></ul></div>
 
                                         <dl>

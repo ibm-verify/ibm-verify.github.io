@@ -29,4 +29,3 @@ com.ibm.security.verifysdk.mfa
 com.ibm.security.verifysdk.mfa.api
 com.ibm.security.verifysdk.mfa.model.cloud
 com.ibm.security.verifysdk.mfa.model.onprem
-

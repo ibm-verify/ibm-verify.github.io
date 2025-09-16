@@ -120,7 +120,7 @@ var pathtoroot = "../../../../../";
 public final class <span class="typeNameLabel"><a href=WalletService.html>WalletService</a></span>
  implements <a href=WalletServiceDescriptor.html>WalletServiceDescriptor</a>
                     </pre>
-                    <div class="block"><p>The <a href=WalletService.html>WalletService</a> class provides implementation for the <a href=WalletServiceDescriptor.html>WalletServiceDescriptor</a> interface. It offers various operations related to wallet management, including refreshing the access token, processing invitations, managing credentials, and handling proof requests.</p><p>This service interacts with the wallet API to perform actions such as fetching credentials, processing proofs, and updating the status of credentials and verifications.</p><p>Key Operations:</p><ul><li><p>Refresh access tokens using the provided refresh token.</p></li><li><p>Preview and process invitations.</p></li><li><p>Process proof requests such as generating, sharing, or rejecting proofs.</p></li><li><p>Retrieve, update, and delete credentials.</p></li><li><p>Delete agents associated with the wallet.</p></li></ul><p>Error Handling: The service uses <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-result/index.html>Result</a> to wrap the responses of operations and will throw appropriate exceptions in case of errors, such as network failures or invalid API responses.</p></div>
+                    <div class="block"><p>The <a href=WalletService.html>WalletService</a> class provides implementation for the <a href=WalletServiceDescriptor.html>WalletServiceDescriptor</a> interface. It offers various operations related to wallet management, including refreshing the access token, processing invitations, managing credentials, and handling proof requests.</p><p>This service interacts with the wallet API to perform actions such as fetching credentials, processing proofs, and updating the status of credentials and verifications.</p><p>Key Operations:</p><ul><li><p>Refresh access tokens using the provided refresh token.</p></li><li><p>Preview and process invitations.</p></li><li><p>Process proof requests such as generating, sharing, or rejecting proofs.</p></li><li><p>Retrieve, update, and delete credentials.</p></li><li><p>Delete agents associated with the wallet.</p></li></ul><p>Error Handling: The service uses <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html>Result</a> to wrap the responses of operations and will throw appropriate exceptions in case of errors, such as network failures or invalid API responses.</p></div>
 
                     <dl>
 
@@ -298,7 +298,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=WalletService.html#setAccessToken(java.lang.String)>setAccessToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accessToken) </code>
                                             </th>
@@ -314,7 +314,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=WalletService.html#setAdditionalHeaders(java.util.Map)>setAdditionalHeaders</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders) </code>
                                             </th>
@@ -346,7 +346,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-result/index.html>Result</a>&lt;TokenInfo&gt;</code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html>Result</a>&lt;TokenInfo&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=WalletService.html#refreshToken(java.lang.String,java.lang.String,java.lang.String)>refreshToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accountName, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> pushToken) </code>
                                             </th>
@@ -386,23 +386,15 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
-                                            <td class="colFirst"><code>final <a href=model/CredentialDescriptor.html>CredentialDescriptor</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=WalletService.html#processCredential(java.lang.String,com.ibm.security.verifysdk.dc.model.CredentialAction)>processCredential</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier, <a href=model/CredentialAction.html>CredentialAction</a> action) </code>
-                                            </th>
-                                            <td class="colLast">Processes a credential by updating its state based on the given action.</td>
-                                        </tr>
-                                        
-                                        <tr id="i13" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=WalletService.html#deleteCredential(java.lang.String)>deleteCredential</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier) </code>
                                             </th>
                                             <td class="colLast">Deletes a credential identified by the given <a href=WalletService.html#deleteCredential(java.lang.String)>identifier</a>.</td>
                                         </tr>
                                         
-                                        <tr id="i14" class="altColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                        <tr id="i13" class="rowColor">
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=WalletService.html#deleteAgent(java.lang.String)>deleteAgent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier) </code>
                                             </th>
@@ -523,7 +515,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                           >
                                     <li class="blockList">
                                         <h4>setAccessToken</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#setAccessToken(java.lang.String)>setAccessToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accessToken)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#setAccessToken(java.lang.String)>setAccessToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accessToken)</pre>
                                         <div class="block"></div>
 
                                         <dl>
@@ -576,7 +568,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                           >
                                     <li class="blockList">
                                         <h4>setAdditionalHeaders</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#setAdditionalHeaders(java.util.Map)>setAdditionalHeaders</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#setAdditionalHeaders(java.util.Map)>setAdditionalHeaders</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders)</pre>
                                         <div class="block"></div>
 
                                         <dl>
@@ -675,7 +667,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                           >
                                     <li class="blockList">
                                         <h4>refreshToken</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-result/index.html>Result</a>&lt;TokenInfo&gt; <a href=WalletService.html#refreshToken(java.lang.String,java.lang.String,java.lang.String)>refreshToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accountName, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> pushToken)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html>Result</a>&lt;TokenInfo&gt; <a href=WalletService.html#refreshToken(java.lang.String,java.lang.String,java.lang.String)>refreshToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accountName, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> pushToken)</pre>
                                         <div class="block"><p>Refreshes the access token using the provided refresh token and optional metadata.</p><p>This function communicates with the configured OAuth provider to request a new access token. It optionally includes the <code>pushToken</code> and <code>accountName</code> as additional parameters in the request, if provided. SSL verification can be bypassed based on the <code>ignoreSsl</code> configuration.</p></div>
 
                                         <dl>
@@ -699,7 +691,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
 
                                         
                                             <dt><span class="returnLabel">Returns:</span></dt>
-                                            <dd><p>A <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-result/index.html>Result</a> wrapping a TokenInfo object on success, or an error on failure.</p></dd>
+                                            <dd><p>A <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html>Result</a> wrapping a TokenInfo object on success, or an error on failure.</p></dd>
                                         
 
                                         
@@ -858,48 +850,6 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                     </li>
                                 </ul>
                                 
-                                <a id="processCredential(java.lang.String,com.ibm.security.verifysdk.dc.model.CredentialAction)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>processCredential</h4>
-                                        <pre class="methodSignature"> final <a href=model/CredentialDescriptor.html>CredentialDescriptor</a> <a href=WalletService.html#processCredential(java.lang.String,com.ibm.security.verifysdk.dc.model.CredentialAction)>processCredential</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier, <a href=model/CredentialAction.html>CredentialAction</a> action)</pre>
-                                        <div class="block"><p>Processes a credential by updating its state based on the given action.</p><p>This function sends an update request to the backend to mark a credential as either accepted or rejected. The state is determined by the <a href=WalletService.html#processCredential(java.lang.String,com.ibm.security.verifysdk.dc.model.CredentialAction)>action</a> provided. If the update is successful, the updated <a href=model/CredentialDescriptor.html>CredentialDescriptor</a> is returned.</p></div>
-
-                                        <dl>
-
-                                        
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>identifier</code> - The unique identifier of the credential to be updated.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>action</code> - The action to apply to the credential—either <a href=model/CredentialAction.html#ACCEPTED>CredentialAction.ACCEPTED</a> or <a href=model/CredentialAction.html#REJECTED>CredentialAction.REJECTED</a>.</dd>
-                                            
-                                            
-                                        
-
-                                        
-                                            <dt><span class="returnLabel">Returns:</span></dt>
-                                            <dd><p>The updated <a href=model/CredentialDescriptor.html>CredentialDescriptor</a> reflecting the new state.</p></dd>
-                                        
-
-                                        
-                                            <dt><span class="sinceLabel">Since:</span></dt>
-                                            
-                                                <dd><p>3.0.7</p></dd>
-                                            
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
                                 <a id="deleteCredential(java.lang.String)">
                                     <!--   -->
                                 </a>
@@ -908,7 +858,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                           >
                                     <li class="blockList">
                                         <h4>deleteCredential</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#deleteCredential(java.lang.String)>deleteCredential</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#deleteCredential(java.lang.String)>deleteCredential</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier)</pre>
                                         <div class="block"><p>Deletes a credential identified by the given <a href=WalletService.html#deleteCredential(java.lang.String)>identifier</a>.</p><p>This function sends a delete request to the backend to remove the credential associated with the provided ID. If the operation fails, the exception is thrown.</p></div>
 
                                         <dl>
@@ -943,7 +893,7 @@ public final class <span class="typeNameLabel"><a href=WalletService.html>Wallet
                                           >
                                     <li class="blockList">
                                         <h4>deleteAgent</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#deleteAgent(java.lang.String)>deleteAgent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=WalletService.html#deleteAgent(java.lang.String)>deleteAgent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> identifier)</pre>
                                         <div class="block"><p>Deletes an agent identified by the given <a href=WalletService.html#deleteAgent(java.lang.String)>identifier</a>.</p><p>This function sends a delete request to the backend using the provided agent ID and current access token. If the operation is successful, it completes silently. If the deletion fails, the encountered exception is thrown.</p></div>
 
                                         <dl>

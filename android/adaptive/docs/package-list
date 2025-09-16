@@ -2,4 +2,3 @@ $dokka.format:javadoc-v1
 $dokka.linkExtension:html
 $dokka.location:com.ibm.security.verifysdk.adaptive/Factor.Companion///PointingToDeclaration/com/ibm/security/verifysdk/adaptive/Factor.Companion.html
 com.ibm.security.verifysdk.adaptive
-
